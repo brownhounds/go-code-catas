@@ -15,6 +15,7 @@ syntax fluency.
 
 - `two_sum`: Find two indices whose values add to a target using a hash map
   (complement lookup).
+- `valid_anagram`: Decide if two strings are anagrams using a frequency count.
 - `rotate_slice_right`: Rotate a slice to the right by `k` steps in-place using
   the three-reversal trick.
 - `remove_duplicates`: Remove duplicates from a sorted slice in-place using a
@@ -25,3 +26,4 @@ syntax fluency.
   Kadane's algorithm.
 - `product_of_array_except_self`: Build a result slice where each element is
   the product of all other elements using prefix/suffix products.
+- `valid_anagram`: Determine whether two strings are anagrams using character frequency counting.

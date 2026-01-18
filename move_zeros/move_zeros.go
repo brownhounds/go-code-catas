@@ -1,7 +1,5 @@
 package movezeroes
 
-import "fmt"
-
 // MoveZeroes moves all zeroes to the end of nums in-place,
 // while keeping the relative order of non-zero elements.
 //
@@ -34,7 +32,6 @@ func MoveZeroesSwapVersion(nums []int) {
 		if nums[read] != 0 {
 			nums[read], nums[write] = nums[write], nums[read]
 			write++
-			fmt.Println("step", nums)
 		}
 	}
 }
