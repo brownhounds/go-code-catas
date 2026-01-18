@@ -46,3 +46,8 @@ padding between fields or at the end of the struct. This kata demonstrates how f
 why pointers and slice headers increase alignment and size, and why it is generally preferable for any unavoidable
 padding to appear as tail padding rather than between fields, keeping frequently accessed data tightly packed
 and cache-friendly.
+- `heap_escapes`: Demonstrate how Go’s escape analysis moves values from the stack to the heap when their lifetime
+cannot be proven to be local, and how this directly translates into heap allocations and garbage-collector pressure.
+The benchmarks contrast value returns versus pointer returns, global pointer storage, closure capture, interface
+boxing, and address-taking inside loops, showing how small structural changes can turn allocation-free code into
+allocation-heavy hot paths despite identical algorithmic complexity.
