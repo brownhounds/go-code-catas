@@ -35,4 +35,9 @@ using a sliding window with last-seen index tracking.
 - `minimum_window_substring`: Find the smallest contiguous substring containing all characters of a target
   string (including duplicates) using a sliding window and frequency map; Unicode-safe via rune processing.
 - `group_anagrams`: Group strings into collections where each collection contains
-  words that are anagrams of each other; Unicode-safe with character multiplicity respected.  
+  words that are anagrams of each other; Unicode-safe with character multiplicity respected.
+
+### Go Generic Concepts
+
+- `pointer_chasing`: Compare pointer-based traversal versus contiguous slice traversal to demonstrate the
+pointer chasing effect, CPU cache friendliness, and hardware prefetch behaviour.
