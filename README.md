@@ -25,6 +25,13 @@ the order of non-zero elements (stable compaction).
 Kadane's algorithm.
 - `product_of_array_except_self`: Build a result slice where each element is 
 the product of all other elements using prefix/suffix products.
+- `slice_functions`: JS-style helpers for slices using Go generics. Includes:
+    - Filter - returns a new slice with elements that pass a test.
+    - Find - returns the first element that passes a test.
+    - Map - returns a new slice by transforming each element.
+    - Some - returns true if any element passes the test.
+    - Every - returns true if all elements pass the test.
+    - Includes - returns true if a value exists in the slice.
 
 ### Strings
 
