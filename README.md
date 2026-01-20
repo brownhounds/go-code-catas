@@ -38,7 +38,8 @@ using a sliding window with last-seen index tracking.
 
 ### Simple Programs
 
-- `parse_csv`: Read a CSV file into a struct, manipulate it in memory, and write it back to disk. Demonstrates file I/O, string manipulation, and memory-safe data structures in Go.
+- `parse_csv`: Read a CSV file into a struct, manipulate it in memory, and write it back to disk. Demonstrates
+file I/O, string manipulation, and memory-safe data structures in Go.
 
 ### Go Generic Concepts
 
@@ -59,3 +60,8 @@ allocation-heavy hot paths despite identical algorithmic complexity.
     - Path parameter extraction (manual, pure net/http)
     - JSON responses
     - Safe, idiomatic Go web handling without external frameworks
+- `http_client`: HTTP client demonstrating:
+    - Dependency injection of *http.Client for testability
+    - Sending JSON requests and decoding JSON responses
+    - Mockable responses derived from the request body for unit testing
+    - Safe, idiomatic Go handling of HTTP requests without external frameworks
