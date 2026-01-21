@@ -26,12 +26,12 @@ Kadane's algorithm.
 - `product_of_array_except_self`: Build a result slice where each element is 
 the product of all other elements using prefix/suffix products.
 - `slice_functions`: JS-style helpers for slices using Go generics. Includes:
-    - Filter - returns a new slice with elements that pass a test.
-    - Find - returns the first element that passes a test.
-    - Map - returns a new slice by transforming each element.
-    - Some - returns true if any element passes the test.
-    - Every - returns true if all elements pass the test.
-    - Includes - returns true if a value exists in the slice.
+    - `Filter` - returns a new slice with elements that pass a test.
+    - `Find` - returns the first element that passes a test.
+    - `Map` - returns a new slice by transforming each element.
+    - `Some` - returns true if any element passes the test.
+    - `Every` - returns true if all elements pass the test.
+    - `Includes` - returns true if a value exists in the slice.
 
 ### Strings
 
@@ -72,3 +72,10 @@ allocation-heavy hot paths despite identical algorithmic complexity.
     - Sending JSON requests and decoding JSON responses
     - Mockable responses derived from the request body for unit testing
     - Safe, idiomatic Go handling of HTTP requests without external frameworks
+- `goroutines`: Computes squares of numbers concurrently using multiple goroutines.
+    - Uses `sync.Mutex` to safely write to a shared slice.
+    - Uses `sync.WaitGroup` to wait until all goroutines finish.    
+- `channels`: Computes squares of numbers using channels to pass data between goroutines. Implements a producer-consumer pattern:
+    - Producer goroutine sends numbers to a channel.
+    - Consumer goroutine squares numbers and sends results to a results channel.
+    - Main goroutine collects results from the results channel.
